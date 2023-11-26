@@ -49,3 +49,7 @@
         https://www.netlify.com/
         create and account -> login -> sites -> drag and drop project folder or browse ->
         the link will be provided by netlify
+
+## Demo
+https://github.com/TejasBandbe/React-Login-Register-Flip-cards/assets/138388245/af9918c4-429e-4088-99d4-322fc84d0309
+
