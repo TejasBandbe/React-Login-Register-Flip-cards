@@ -1,0 +1,252 @@
+:root{
+    --main-color: #ff0;
+    --light-white: rgba(255,255,255,.5);
+    --light-black: rgba(0,0,0,.3);
+    --light-bg: rgba(255,255,255,.1);
+    --white: #fff;
+    --black: #000;
+}
+
+.outer-box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer-box img{
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+.maintenance-container{
+    padding: 1rem;
+    background: var(--light-bg);
+    backdrop-filter: blur(.4rem);
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+@media(max-width: 768px){
+    .maintenance{
+        width: 8rem;
+    }
+}
+
+@media(max-width: 500px){
+    .maintenance{
+        width: 6rem;
+    }
+}
+/* ============================== */
+/* About us page */
+.abt-btn{
+    border-radius: .5rem;
+    background: var(--main-color);
+    color: var(--black);
+    cursor: pointer;
+    text-align: center;
+    width: 50%;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    padding: .5rem;
+}
+.abt-btn:hover{
+    transform: scale(0.9);
+    transition: .2s;
+}
+.head{
+    margin-top: 5rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.head h1{
+    font-size: 4rem;
+}
+.details{
+    text-align: center;
+    background-color: var(--light-bg);
+    backdrop-filter: blur(.4rem);
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+}
+.details h3{
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.details p{
+    color: var(--light-white);
+    line-height: 2;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+.grid .bx{
+    background-color: var(--light-bg);
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(.4rem);
+    border-radius: .5rem;
+}
+.grid .bx:hover{
+    background-color: var(--light-black);
+}
+.grid .bx img{
+    height: 10rem;
+    transition: .2s linear;
+}
+.grid .bx:hover img{
+    transform: scale(1.1);
+    transition: .2s;
+}
+.grid .bx h3{
+    color: #fff;
+}
+.grid .bx p{
+    color: var(--light-white);
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+.reviews .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.reviews .grid .bx{
+    background-color: var(--light-bg);
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(.4rem);
+    border-radius: .5rem;
+}
+.reviews .grid .bx img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.reviews .grid .bx h3{
+    font-size: 2rem;
+    color: var(--white);
+}
+.reviews .grid .bx p{
+    padding: 1rem 0;
+    line-height: 1.5;
+    color: var(--light-white);
+    font-size: 1.2rem;
+}
+.reviews .grid .bx .stars{
+    margin-top: 1rem;
+}
+.reviews .grid .bx .stars i{
+    font-size: 1.2rem;
+    color: var(--main-color);
+}
+.reviews .grid .bx:hover{
+    background-color: var(--light-black);
+}
+.credit{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    color: var(--light-white);
+}
+.credit span{
+    color: var(--main-color);
+}
+
+
+
+@media(max-width: 1507px){
+    .grid{
+        grid-template-columns: repeat(auto-fit, 20rem);
+    }
+    .grid .bx img{
+        height: 9rem;
+    }
+}
+
+@media(max-width: 1215px){
+    .grid{
+        grid-template-columns: repeat(auto-fit, 15rem);
+    }
+    .grid .bx img{
+        height: 7rem;
+    }
+    .grid .bx h3{
+        font-size: 1.2rem;
+    }
+    .grid .bx p{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 991px){
+    .grid{
+        grid-template-columns: repeat(auto-fit, 25rem);
+    }
+    .grid .bx img{
+        height: 10rem;
+    }
+    .credit{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 768px){
+    .head h1{
+        font-size: 3rem;
+    }
+    .abt-btn{
+        font-size: 0.8rem;
+    }
+    .details p{
+        line-height: 1.5;
+    }
+    .credit{
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 500px){
+    .features .grid{
+        grid-template-columns: repeat(auto-fit, 20rem);
+    }
+    .features .grid .bx img{
+        height: 8rem;
+    }
+}
+
+@media(max-width: 400px){
+    .head h1{
+        font-size: 2rem;
+    }
+    .abt-btn{
+    font-size: 0.6rem;
+    }
+    .features .grid{
+        grid-template-columns: repeat(auto-fit, 17rem);
+    }
+    .features .grid .bx img{
+        height: 6rem;
+    }
+    .credit{
+        font-size: 1rem;
+    }
+}

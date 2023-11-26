@@ -1,0 +1,134 @@
+:root{
+    --main-color: #ff0;
+    --light-white: rgba(255,255,255,.5);
+    --light-black: rgba(0,0,0,.3);
+    --light-bg: rgba(255,255,255,.1);
+    --white: #fff;
+    --black: #000;
+}
+
+.main-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.card{
+    width: 100%;
+    background: transparent;
+    color: #fff;
+}
+
+.card-front, .card-rear{
+    padding: 1rem;
+    background: var(--light-bg);
+    backdrop-filter: blur(.4rem);
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid #fff;
+}
+
+.card-front h1, .card-rear h1{
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.box{
+    width: 90%;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.input-box{
+    width: 90%;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+::placeholder{
+    color: var(--light-white);
+}
+
+.check{
+    width: 90%;
+    text-align: left;
+}
+.check input{
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+.check input:checked{
+    accent-color: #000;
+}
+
+.check span{
+    font-size: 1.1rem;
+}
+
+.btns{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border-radius: 10px;
+    width: 60%;
+    color: #fff;
+    background: var(--black);
+    transition: .1s;
+}
+
+.btns:hover{
+    background: var(--black);
+    transform: scale(1.1);
+    transition: .1s;
+}
+
+.icon{
+    margin-right: 10px;
+    color: var(--light-white);
+    font-size: 1.5rem;
+}
+
+.icon-eye{
+    cursor: pointer;
+    text-align: right;
+    display: flex;
+}
+
+#hide1, #hide3{
+    display: none;
+}
+
+.card-front a{
+    color: var(--light-white);
+}
+.card-front a:hover{
+    color: #fff;
+}
+
+.flip{
+    margin-top: 2rem;
+}
+
+.maintenance{
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+@media(max-width: 768px){
+    .maintenance{
+        width: 8rem;
+    }
+}
+
+@media(max-width: 500px){
+    .maintenance{
+        width: 6rem;
+    }
+}
